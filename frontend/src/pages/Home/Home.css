@@ -1,0 +1,91 @@
+body{
+  background-color: white ;
+}
+.form {
+  background: rgba(78, 169, 255, 0.795);
+  padding: 0.25rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  height: 3rem;
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
+}
+.input {
+  border: none;
+  padding: 0 1rem;
+  flex-grow: 1;
+  border-radius: 2rem;
+  margin: 0.25rem;
+}
+.input:focus {
+  outline: none;
+}
+
+.form > button {
+  background: rgb(0, 94, 218);
+  border: none;
+  padding: 0 1rem;
+  margin: 0.25rem;
+  border-radius: 3px;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.messages {
+  list-style-type: none;
+  margin-bottom: 5%;
+  padding: 0;
+  margin-top: 95px;
+}
+
+.messages > li {
+  padding: 0.5rem 1rem;
+}
+.messages > li:nth-child(odd) {
+  background: #efefef;
+}
+/* .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  width: 45vw;
+} */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
+  background-color: #f1f1f1;
+  border-radius: 25px;
+  margin-left: 15px;
+  margin-right: 300px;
+  margin-bottom: 25px;
+  box-shadow: 0px 0px 20px grey;
+  width: 55vw;
+}
+img {
+  object-fit: contain;
+  width: 90%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 555px) {
+  .container {
+    width: 85vw;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+

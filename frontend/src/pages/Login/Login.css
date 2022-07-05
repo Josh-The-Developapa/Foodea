@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  /* background-color: #4600b6; */
+}
+#root {
+  height: 100vh;
+}
+* {
+  box-sizing: border-box;
+}
+
+.joinOuterContainer {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  align-items: center;
+  background-color: rgb(34, 77, 117);
+}
+
+.joinInnerContainer {
+  padding-left: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  width: 360px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  font-family: 'Quicksand', sans-serif;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+h3 {
+  position: absolute;
+  top: 90%;
+  color: white;
+}
+
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.joinInput {
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 10px 15px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.heading {
+  color: black;
+  font-size: 2.5em;
+}
+
+.fPL {
+  margin: 0;
+  text-decoration: none;
+  color: rgb(36, 88, 138)
+}
+
+.namep {
+  margin: 0;
+  color: red;
+}
+.passp {
+  margin: 0;
+  color: red;
+}
+.button {
+  cursor: pointer;
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: rgb(15, 104, 187);
+  padding: 10px;
+  border-radius: 25px;
+  display: inline-block;
+  border: none;
+  width: 100%;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.mt-20 {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.button:focus {
+  outline: 0;
+}
+
+.button:hover {
+  background: rgb(5, 77, 145);
+}

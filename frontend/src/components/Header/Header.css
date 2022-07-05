@@ -1,0 +1,125 @@
+.navBar {
+  background-color: rgb(27, 145, 255);
+  height: 75px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.popo {
+  background-color: rgb(15, 104, 187);
+}
+
+.popo:hover {
+  background-color: rgb(5, 77, 145);
+}
+
+
+.btn-m {
+  background-color: rgb(15, 104, 187);
+}
+
+.btn-m:hover {
+  background-color: rgb(5, 77, 145);
+}
+@media screen and (max-width: 740px) {
+  .navBar {
+    position: fixed;
+    left: 0;
+    z-index: 9;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+  }
+  .popo {
+    display: none;
+  }
+  .btn-n {
+    display: none;
+  }
+  .btn-m {
+    display: none;
+  }
+  .Menu {
+    position: relative;
+    cursor: pointer;
+    margin-left: 5%;
+  }
+}
+
+@media screen and (min-width: 741px) {
+  .navBar {
+    position: fixed;
+    left: 0;
+    z-index: 9;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+  }
+  .Menu {
+    cursor: auto;
+    opacity: 0;
+  }
+  .popo {
+    cursor: pointer;
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-top: 13px;
+    padding-bottom: 14px;
+    border-radius: 15px;
+    display: inline-block;
+    border: none;
+    width: 100px;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+
+  .popo:focus {
+    outline: 0;
+  }
+
+  .btn-m {
+    cursor: pointer;
+    font-size: 15px;
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 100px;
+    padding-top: 13px;
+    padding-bottom: 14px;
+    border-radius: 15px;
+    display: inline-block;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+
+  .btn-m:focus {
+    outline: 0;
+  }
+}
+
+.Menu {
+  background-color: rgb(15, 104, 187);
+  cursor: pointer;
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-top: 13px;
+    padding-bottom: 14px;
+    border-radius: 15px;
+    display: inline-block;
+    border: none;
+    width: 100px;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 5px;
+    margin-left: 20px;
+}
